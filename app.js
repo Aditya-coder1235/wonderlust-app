@@ -31,11 +31,11 @@ app.use(express.json());
 app.use(methodOverride("_method"));
 app.use(express.static(path.join(__dirname,"/public")));
 
+const dbUrl = process.env.ATLASDB_URL;
+
 async function main() {
     await mongoose.connect(dbUrl);
 }
-
-const dbUrl=process.env.ATLASDB_URL;
 
 main().then(res=>{console.log("connect to DB")}).catch(err=>{console.log(err)});
 
