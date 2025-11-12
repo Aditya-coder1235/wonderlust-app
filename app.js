@@ -81,6 +81,7 @@ app.use((req,res,next)=>{
     next();
 });
 
+
 //listing route
 app.use("/listings",listingRouter);
 

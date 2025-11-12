@@ -120,3 +120,60 @@ display: flex;
 .star{
     padding: 5px;
 }
+
+/* Tablets */
+@media (max-width: 992px) {
+  .listing-card {
+    flex: 1 1 calc(33.333% - 1rem);
+  }
+
+  .mid-main {
+    margin-left: 20px !important;
+  }
+
+  .btn1 {
+    margin-left: 0;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 768px) {
+  .listing-card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  .fa-compass {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 576px) {
+  .listing-card {
+    flex: 1 1 100%;
+  }
+
+  .mid-main {
+    margin-left: 0 !important;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+
+  .btn1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .f-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
